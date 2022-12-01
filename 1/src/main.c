@@ -5,10 +5,24 @@
 */
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-#include "../include/Advent_Of_Code_2022.h"
+#include "../include/1.h"
 
 int main()
 {
+	FILE * fp = fopen("elves.txt", "r");
+    if (!fp)
+    {
+        fprintf(stderr, "Error opening file %s: \n", "elves.txt");
+        perror("");
+        return 1;
+    }
+    else
+    {
+	    calculate_calories(fp);
+
+    }
 
 }
