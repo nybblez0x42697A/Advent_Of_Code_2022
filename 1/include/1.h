@@ -8,6 +8,6 @@
 #define ADVENT_OF_CODE_2022_H
 
 
-
+void calculate_calories(FILE * file_ptr);
 
 #endif
